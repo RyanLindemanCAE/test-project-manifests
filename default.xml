@@ -2,5 +2,5 @@
 <manifest>
   <remote name="test-host" revision="develop" upstream="develop" fetch="ssh://git@github.com/RyanLindemanCAE/"/>
   <include name="import.xml"/>
-  <project remote="test-host" name="test-project" path="test-project" remote="test-host"/>
+  <project remote="test-host" name="test-project" path="test-project"/>
 </manifest>
