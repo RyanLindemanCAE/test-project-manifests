@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="ssh://git@github.com/RyanLindemanCAE/" name="github"/>
-  <remote fetch="ssh://git@github.com/RyanLindemanCAE/" name="test-host" revision="develop" upstream="develop"/>
-  
-  <default remote="github" revision="master" upstream="master"/>
-  
-  <!-- Upstream projects: QSDK and platform -->
-  <project name="oss-openwrt" path="openwrt"/>
-  
-  <!-- Gateway pro projects -->
-  <project name="test-project" path="test-project" remote="test-host"/>
-
+  <remote name="test-host" revision="develop" upstream="develop" fetch="ssh://git@github.com/RyanLindemanCAE/"/>
+  <include name="import.xml"/>
+  <project remote="test-host" name="test-project" path="test-project" remote="test-host"/>
 </manifest>
